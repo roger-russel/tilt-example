@@ -1,0 +1,9 @@
+
+metallb:
+  IPAddressPool:
+    addresses:
+      # docker network inspect -f '{{.IPAM.Config}}' kind
+      - "172.18.255.200-172.18.255.250"
+
+  example:
+    enabled: false
